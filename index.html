@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,41 +13,53 @@
 
     <!-- FontAwesome for social icons -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<body>
 
+<body>
     <!-- Header Section -->
     <header>
-        <div class="container">
-            <h1>Artist Name</h1>
-            <nav>
-                <ul>
-                    <li><a href="#biography">Biography</a></li>
-                    <li><a href="#discography">Discography</a></li>
-                    <li><a href="#music-videos">Music Videos</a></li>
-                    <li><a href="#social-media">Social Media</a></li>
-                </ul>
-            </nav>
-        </div>
+        
+        <h1 class="logo">Artist Name</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#biography">Biography</a></li>
+                <li><a href="#discography">Discography</a></li>
+                <li><a href="#music-videos">Music Videos</a></li>
+                <li><a href="#social-media">Social Media</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Biography Section -->
     <section id="biography">
-        <div class="container">
-            <h2>Biography</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores eligendi ipsum expedita eos autem doloremque perspiciatis et aut praesentium voluptatem blanditiis fuga quibusdam, a reiciendis molestias cupiditate labore culpa id!</p>
+        <div class="container bio-container">
+            <div class="bio-image">
+                <img src="Images/artist.jpg" alt="Artist Photo">
+            </div>
+            <div class="bio-content">
+                <h2>Biography</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores eligendi ipsum expedita eos autem doloremque perspiciatis et aut praesentium voluptatem blanditiis fuga quibusdam, a reiciendis molestias cupiditate labore culpa id!</p>
+            </div>
         </div>
     </section>
 
     <!-- Discography Section -->
     <section id="discography">
-        <div class="container">
+        <div class="container discography-container">
             <h2>Discography</h2>
-            <ul>
-                <li>Album 1 (2021)</li>
-                <li>Album 2 (2020)</li>
-                <li>Album 3 (2019)</li>
-            </ul>
+            <div class="album">
+                <img src="Images/album1.jpg" alt="Album 1 Cover">
+                <p>Album 1 (2021)</p>
+            </div>
+            <div class="album">
+                <img src="Images/album2.jpg" alt="Album 2 Cover">
+                <p>Album 2 (2020)</p>
+            </div>
+            <div class="album">
+                <img src="Images/album3.jpg" alt="Album 3 Cover">
+                <p>Album 3 (2019)</p>
+            </div>
         </div>
     </section>
 
@@ -54,6 +67,9 @@
     <section id="music-videos">
         <div class="container">
             <h2>Music Videos</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/videoid" title="Music Video"></iframe>
+            </div>
             <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/videoid" title="Music Video"></iframe>
             </div>
@@ -65,10 +81,10 @@
         <div class="container">
             <h2>Follow on Social Media</h2>
             <div class="social-icons">
-                <a href="#" target="_blank" class="icon"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" target="_blank" class="icon"><i class="fab fa-twitter"></i></a>
-                <a href="#" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
-                <a href="#" target="_blank" class="icon"><i class="fab fa-spotify"></i></a>
+                <a href="#" target="_blank" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" target="_blank" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" target="_blank" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" target="_blank" class="icon"><i class="fa-brands fa-spotify"></i></a>
             </div>
         </div>
     </section>
@@ -79,6 +95,6 @@
             <p>&copy; 2024 Artist Fan Page | Designed by Humphrey and Alon</p>
         </div>
     </footer>
-
 </body>
+
 </html>
