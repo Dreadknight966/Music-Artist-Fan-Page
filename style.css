@@ -30,8 +30,12 @@ header {
     z-index: 100;
 }
 
+header a {
+    text-decoration: none;
+}
+
 .logo {
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-transform: uppercase;
     color: #61b5b7;
     font-weight: 800;
@@ -39,7 +43,7 @@ header {
     transition: 0.5s ease;
 }
 
-.logo:hover{
+.logo:hover {
     transform: scale(1.1);
 }
 
@@ -52,15 +56,13 @@ header {
 }
 
 .nav-links li {
-    margin: 0 15px;
-    margin-right: 2.5rem;
+    margin: 0 10px;
 }
 
 .nav-links a {
     color: #f1f1f1;
     text-decoration: none;
     font-size: 1.2rem;
-    margin-right: 1.5rem;
     font-weight: 500;
     transition: color 0.3s ease;
     border-bottom: 3px solid transparent;
@@ -103,8 +105,8 @@ header {
     text-align: justify;
 }
 
-.bio-content h2{
-    color:#61b5b7;
+.bio-content h2 {
+    color: #61b5b7;
     text-decoration: none;
 }
 
@@ -120,12 +122,12 @@ header {
     flex-wrap: wrap;
 }
 
-.discography-container h2, a{
-    color:#61b5b7;
+.discography-container h2,
+a {
+    color: #61b5b7;
     text-decoration: none;
     text-align: center;
 }
-
 
 .album {
     display: flex;
@@ -135,12 +137,6 @@ header {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     margin-bottom: 2rem;
-}
-
-.album a{
-    color:white;
-    text-decoration: none; 
-    background-color: none;
 }
 
 .album img {
@@ -153,10 +149,10 @@ header {
 }
 
 /* Music Videos Section */
-#music-videos .container h2{
+#music-videos .container h2 {
     text-align: center;
     margin-bottom: 1.5rem;
-    color:#61b5b7;
+    color: #61b5b7;
     text-decoration: none;
 }
 
@@ -178,7 +174,7 @@ header {
 }
 
 /* Social Media Section */
-#social-media .container h2{
+#social-media .container h2 {
     text-align: center;
     color: #ffffff;
 }
@@ -212,11 +208,61 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    /* Header */
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    /* Biography Section */
+    #biography {
+        margin-top: 15%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bio-image {
+        margin-bottom: 20px;
+    }
+
     .bio-content {
         max-width: 100%;
     }
 
+    /* Discography Section */
     .discography-container {
         flex-direction: column;
+        text-align: center;
+    }
+
+    .album {
+        margin-bottom: 30px;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* General Text Resizing */
+    body {
+        font-size: 0.9rem;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    /* Music Videos Section */
+    .video-container iframe {
+        width: 100%;
+        height: 250px;
     }
 }
